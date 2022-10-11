@@ -1,38 +1,244 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  }
+body{
+  background: linear-gradient(93.66deg, #000508 6.61%, #052B2E 15.02%, #0F3537 24.3%, #000606 49.24%, #000405 99.73%, rgba(19, 84, 88, 0) 100.94%, #000A0C 100.94%);
+    color: #b2997a;
+    margin: 0;
+    padding: 0;
+}
+
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.Plot{
+width: 300px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 200;
+font-size: 11px;
+line-height: 1.5em;
+}
+.kino{
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  max-width: 300px;
+}
+h2{
+  color: #968852;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+
+.showMore{
+  background-color: transparent;
+  border: 0;
+  color: #9f6269;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 11px;
+}
+
+
+.btn {
+  margin: 15px;
+}
+
+.filter{
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 15px;
+  background-color: transparent;
+  color: #c76c7b;
+  border: 0;
+    }
+  .filter:hover{
+    scale: 1.1;
+    color: #9f6269;
+  }
+
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+  .link{
+    color: #3ca1a1;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px;
+  }
+  .link:hover{
+    color: #c76c7b;
+    transition-duration: .6s;
+  }
+
+  .year {
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    color: rgb(75, 75, 69);
+  }
+
+  .TVposter{
+    width:250px;
+    height:350px;
+  }
+
+  .Movieposter{
+    width:250px;
+    height:370px;
+  }
+
+  .rating, .director, .number{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-bottom: 12px;
+    margin-top: 14px;
+  }
+
+  b{
+    color: #9f6269;
+  }
+
+  .icon{
+    color: #3ca1a1;
+    align-self: auto;
+  }
+
+  .content{
+    background-image: url('https://img.freepik.com/free-photo/cinema-day-young-couple-with-popcorn-watching-interesting-movie-their-date-cinema_8353-6563.jpg?w=2000&t=st=1665398930~exp=1665399530~hmac=024bc29a37b519dfc2c864c9ddf65bfc125673bd98e223f8562d8b3f92a5ad87');
+    height: 91vh;
+    background-position: right  bottom ;
+    background-size: 42%;
+    background-repeat: no-repeat;
+    
+  }
+
+  .quote{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+
+h3{
+  font-family: 'Caveat', cursive;
+  color: #3ca1a1;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 30px;
+  width: 70%;
   text-align: center;
 }
+  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color: #c76c7b;
+    padding: 30px;
+    font-size: 28px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-left: 15%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  padding: 20px
   }
-  to {
-    transform: rotate(360deg);
+
+  .carousel{
+ padding: 10px;
   }
-}
+  
+  button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .name{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #c76c7b;
+  }
+
+  .poster{
+    width: 230px;
+  }
+  
+
+  @media all and (max-width:800px){
+    .content{
+      background-size: 55%;
+      height: 100vh;
+    }
+
+    .quote{
+      margin-left: 0;
+      justify-content: center;
+    }
+
+    h1{
+      padding: 30px;
+      font-size: 24px;
+      text-align: center;
+      line-height: 1.5em;
+    }
+    .wrapper{
+      margin-left: 0;
+      justify-content: center;
+      }
+  }
+
+  @media all and (max-width:500px){
+    .content{
+      background-size: 55%;
+      height: 110vh;
+    }
+
+    .quote{
+      margin-left: 0;
+      justify-content: center;
+    }
+
+    h1{
+      padding: 20px;
+      font-size: 20px;
+    }
+
+      .poster{
+        width: 200px;
+      }
+
+      .filter{
+        padding:0
+          }
+          .btn {
+            margin: 7px;
+          }
+          .TVposter{
+            width:300px;
+            height:440px;
+          }
+        
+          .Movieposter{
+            width:300px;
+            height:440px;
+          }
+  }
